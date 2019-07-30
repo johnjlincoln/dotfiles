@@ -36,8 +36,29 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 # 4. ALIASES (comment each)
 # -----------------------------------------
 
-## colorize the ls output ##
-alias ls='ls --color=auto'
-
 ## use long listing format ##
 alias ll='ls -la'
+
+## os based ls color alias ##
+OS="`uname`"
+case $OS in
+  'Linux')
+    OS='Linux'
+    alias ls='ls --color=auto'
+    ;;
+  'FreeBSD')
+    OS='FreeBSD'
+    alias ls='ls -G'
+    ;;
+  'WindowsNT')
+    OS='Windows'
+    ;;
+  'Darwin')
+    OS='Mac'
+    ;;
+  'SunOS')
+    OS='Solaris'
+    ;;
+  'AIX') ;;
+  *) ;;
+esac
