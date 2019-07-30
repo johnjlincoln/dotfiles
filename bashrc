@@ -31,3 +31,13 @@ export PATH=$PATH:$GOPATH/bin
 
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
+
+# -----------------------------------------
+# 4. ALIASES (comment each)
+# -----------------------------------------
+
+## colorize the ls output ##
+alias ls='ls --color=auto'
+
+## use long listing format ##
+alias ll='ls -la'
