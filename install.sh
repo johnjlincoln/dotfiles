@@ -10,6 +10,6 @@ cp vimrc ~/.vimrc
 echo "Vim settings installed!"
 
 echo "Installing spacemacs..."
-git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+git clone -b develop https://github.com/syl20bnr/spacemacs ~/.emacs.d
 cp spacemacs ~/.spacemacs
 echo "Spacemacs installed!"
