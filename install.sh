@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 echo "Installing bash settings..."
 cp bashrc ~/.bashrc
@@ -10,6 +10,14 @@ cp vimrc ~/.vimrc
 echo "Vim settings installed!"
 
 echo "Installing spacemacs..."
-git clone -b develop https://github.com/syl20bnr/spacemacs ~/.emacs.d
-cp spacemacs ~/.spacemacs
+if [ -d ~/.emacs.d ]
+then
+  echo "~/.emacs.d directory already exists, skipping installation..."
+  echo "copying spacemacs config file..."
+  cp spacemacs ~/.spacemacs
+else
+  git clone -b develop https://github.com/syl20bnr/spacemacs ~/.emacs.d
+  echo "copying spacemacs config file..."
+  cp spacemacs ~/.spacemacs
+fi
 echo "Spacemacs installed!"
