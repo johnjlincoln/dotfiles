@@ -9,6 +9,11 @@ echo "Installing vim settings..."
 cp vimrc ~/.vimrc
 echo "Vim settings installed!"
 
+echo "Install git settings"
+cp gitignore ~/.gitignore
+cp gitconfig ~/.gitconfig
+echo "Git settings installed!"
+
 echo "Installing spacemacs..."
 if [ -d ~/.emacs.d ]
 then
