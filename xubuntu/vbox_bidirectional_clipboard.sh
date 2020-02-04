@@ -1,4 +1,2 @@
-# sudo apt-get update
-# sudo apt-get install virtualbox-guest-x11
-
+#!/bin/bash
 sudo VBoxClient --clipboard
