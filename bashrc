@@ -1,10 +1,3 @@
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.bash ] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.bash
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.bash ] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.bash
-
 ## bashrc ##
 
 # -----------------------------------------
@@ -22,7 +15,7 @@ export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 # -----------------------------------------
 
 export PATH="$PATH:/usr/local/bin/"
-export GOPATH=$HOME/code/go
+export GOPATH=$HOME/codebase/go
 export PATH=$PATH:$GOPATH/bin
 
 # -----------------------------------------
